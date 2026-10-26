@@ -1,0 +1,25 @@
+# Python and local environments
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+!.env.example
+
+# Angular dependencies and build outputs
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Private data and unapproved artifacts
+# (Data is open ERA5 weather data and the model is our own, so both are committed.)
+# data/
+# backend/models/
+
+# Local logs
+*.log

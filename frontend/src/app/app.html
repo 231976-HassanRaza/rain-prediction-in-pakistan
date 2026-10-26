@@ -1,0 +1,66 @@
+<main class="shell">
+  <header>
+    <h1>Rain Tomorrow — Islamabad &amp; Karachi</h1>
+    <p>Teaching prototype • Random Forest trained on ERA5 daily weather (2000–2025)</p>
+  </header>
+
+  @if (deployedStatic) {
+    <aside class="notice">Static GitHub Pages demonstration only.
+      Predictions require Flask and Angular running locally.</aside>
+  }
+
+  <form (ngSubmit)="submit()">
+    <h2>Model input features ({{ fields.length }})</h2>
+    <div class="toolbar">
+      @for (s of samples; track s.title; let i = $index) {
+        <button type="button" class="secondary" (click)="loadSample(i)">Load sample: {{ s.title }}</button>
+      }
+      <button type="button" class="secondary" (click)="clearForm()">Clear</button>
+    </div>
+
+    @for (g of groups; track g.name) {
+      <fieldset>
+        <legend>{{ g.name }}</legend>
+        <div class="grid">
+          @for (field of g.fields; track field.name) {
+            <label>{{ field.label }}
+              @if (field.kind === 'number') {
+                <input type="number" step="any" [name]="field.name"
+                  [min]="field.min ?? null" [max]="field.max ?? null"
+                  [(ngModel)]="values[field.name]" [required]="field.required" />
+              } @else {
+                <select [name]="field.name" [(ngModel)]="values[field.name]"
+                  [required]="field.required">
+                  <option [ngValue]="null">Select a value</option>
+                  @for (option of field.options ?? []; track option) {
+                    <option [ngValue]="option">{{ option }}</option>
+                  }
+                </select>
+              }
+            </label>
+          }
+        </div>
+      </fieldset>
+    }
+
+    <button type="submit" [disabled]="loading() || deployedStatic">
+      {{ loading() ? 'Predicting…' : 'Run local prediction' }}
+    </button>
+  </form>
+
+  @if (error()) { <p class="error" role="alert">{{ error() }}</p> }
+
+  @if (result(); as r) {
+    <section class="result">
+      <h2>Prediction result</h2>
+      <p class="big"><strong>{{ r.label ?? r.prediction }}</strong></p>
+      @if (r.rain_probability != null) {
+        <p>Probability of rain tomorrow (≥ 1 mm): <strong>{{ percent(r.rain_probability) }}</strong></p>
+      }
+      @if (r.probabilities) {
+        <p>Class probabilities [No rain, Rain]: {{ r.probabilities.join(', ') }}</p>
+      }
+      <p class="small">{{ r.disclaimer }}</p>
+    </section>
+  }
+</main>

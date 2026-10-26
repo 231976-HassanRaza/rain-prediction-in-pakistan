@@ -1,0 +1,17 @@
+{
+  "best_params": {
+    "n_estimators": 200,
+    "max_depth": 20
+  },
+  "test_accuracy": 0.8698630136986302,
+  "test_precision": 0.7057220708446866,
+  "test_recall": 0.487758945386064,
+  "test_f1": 0.576837416481069,
+  "test_roc_auc": 0.9076515164056225,
+  "baseline_always_no_rain_accuracy": 0.8181506849315069,
+  "rows": {
+    "train": 13822,
+    "val": 2192,
+    "test": 2920
+  }
+}

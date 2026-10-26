@@ -1,0 +1,698 @@
+{
+ "features": [
+  {
+   "name": "city",
+   "label": "City",
+   "kind": "category",
+   "required": true,
+   "options": [
+    "Islamabad",
+    "Karachi"
+   ]
+  },
+  {
+   "name": "temperature_2m_max",
+   "label": "temperature_2m_max",
+   "kind": "number",
+   "required": true,
+   "min": 6.305,
+   "max": 47.995
+  },
+  {
+   "name": "temperature_2m_min",
+   "label": "temperature_2m_min",
+   "kind": "number",
+   "required": true,
+   "min": -0.5,
+   "max": 34.7
+  },
+  {
+   "name": "temperature_2m_mean",
+   "label": "temperature_2m_mean",
+   "kind": "number",
+   "required": true,
+   "min": 4.805,
+   "max": 39.895
+  },
+  {
+   "name": "apparent_temperature_mean",
+   "label": "apparent_temperature_mean",
+   "kind": "number",
+   "required": true,
+   "min": 1.845,
+   "max": 44.855
+  },
+  {
+   "name": "precipitation_sum",
+   "label": "precipitation_sum",
+   "kind": "number",
+   "required": true,
+   "min": -11.225,
+   "max": 235.725
+  },
+  {
+   "name": "rain_sum",
+   "label": "rain_sum",
+   "kind": "number",
+   "required": true,
+   "min": -11.225,
+   "max": 235.725
+  },
+  {
+   "name": "precipitation_hours",
+   "label": "precipitation_hours",
+   "kind": "number",
+   "required": true,
+   "min": -1.2,
+   "max": 25.2
+  },
+  {
+   "name": "shortwave_radiation_sum",
+   "label": "shortwave_radiation_sum",
+   "kind": "number",
+   "required": true,
+   "min": -0.076,
+   "max": 31.516
+  },
+  {
+   "name": "wind_speed_10m_max",
+   "label": "wind_speed_10m_max",
+   "kind": "number",
+   "required": true,
+   "min": 2.2,
+   "max": 50.6
+  },
+  {
+   "name": "wind_gusts_10m_max",
+   "label": "wind_gusts_10m_max",
+   "kind": "number",
+   "required": true,
+   "min": 7.405,
+   "max": 90.895
+  },
+  {
+   "name": "wind_direction_10m_dominant",
+   "label": "wind_direction_10m_dominant",
+   "kind": "number",
+   "required": true,
+   "min": -18.0,
+   "max": 378.0
+  },
+  {
+   "name": "et0_fao_evapotranspiration",
+   "label": "et0_fao_evapotranspiration",
+   "kind": "number",
+   "required": true,
+   "min": -0.203,
+   "max": 13.723
+  },
+  {
+   "name": "sunshine_duration",
+   "label": "sunshine_duration",
+   "kind": "number",
+   "required": true,
+   "min": -2515.93,
+   "max": 52834.53
+  },
+  {
+   "name": "daylight_duration",
+   "label": "daylight_duration",
+   "kind": "number",
+   "required": true,
+   "min": 34854.6465,
+   "max": 52641.5035
+  },
+  {
+   "name": "rh_mean",
+   "label": "rh_mean",
+   "kind": "number",
+   "required": true,
+   "min": 10.1458,
+   "max": 101.3542
+  },
+  {
+   "name": "rh_min",
+   "label": "rh_min",
+   "kind": "number",
+   "required": true,
+   "min": -2.5,
+   "max": 96.5
+  },
+  {
+   "name": "rh_max",
+   "label": "rh_max",
+   "kind": "number",
+   "required": true,
+   "min": 21.25,
+   "max": 103.75
+  },
+  {
+   "name": "dewpoint_mean",
+   "label": "dewpoint_mean",
+   "kind": "number",
+   "required": true,
+   "min": -10.3865,
+   "max": 30.199
+  },
+  {
+   "name": "pressure_msl_mean",
+   "label": "pressure_msl_mean",
+   "kind": "number",
+   "required": true,
+   "min": 989.3258,
+   "max": 1028.4492
+  },
+  {
+   "name": "pressure_msl_min",
+   "label": "pressure_msl_min",
+   "kind": "number",
+   "required": true,
+   "min": 987.295,
+   "max": 1027.005
+  },
+  {
+   "name": "pressure_msl_max",
+   "label": "pressure_msl_max",
+   "kind": "number",
+   "required": true,
+   "min": 990.82,
+   "max": 1032.18
+  },
+  {
+   "name": "surface_pressure_mean",
+   "label": "surface_pressure_mean",
+   "kind": "number",
+   "required": true,
+   "min": 930.1221,
+   "max": 1026.6196
+  },
+  {
+   "name": "cloud_mean",
+   "label": "cloud_mean",
+   "kind": "number",
+   "required": true,
+   "min": -5.0,
+   "max": 105.0
+  },
+  {
+   "name": "cloud_max",
+   "label": "cloud_max",
+   "kind": "number",
+   "required": true,
+   "min": -5.0,
+   "max": 105.0
+  },
+  {
+   "name": "cloud_low_mean",
+   "label": "cloud_low_mean",
+   "kind": "number",
+   "required": true,
+   "min": -4.9792,
+   "max": 104.5625
+  },
+  {
+   "name": "cloud_mid_mean",
+   "label": "cloud_mid_mean",
+   "kind": "number",
+   "required": true,
+   "min": -4.9979,
+   "max": 104.9562
+  },
+  {
+   "name": "cloud_high_mean",
+   "label": "cloud_high_mean",
+   "kind": "number",
+   "required": true,
+   "min": -5.0,
+   "max": 105.0
+  },
+  {
+   "name": "wind_speed_mean",
+   "label": "wind_speed_mean",
+   "kind": "number",
+   "required": true,
+   "min": 0.7533,
+   "max": 41.8383
+  },
+  {
+   "name": "winddir_sin_mean",
+   "label": "winddir_sin_mean",
+   "kind": "number",
+   "required": true,
+   "min": -1.0962,
+   "max": 1.0793
+  },
+  {
+   "name": "winddir_cos_mean",
+   "label": "winddir_cos_mean",
+   "kind": "number",
+   "required": true,
+   "min": -1.0887,
+   "max": 1.0569
+  },
+  {
+   "name": "vpd_mean",
+   "label": "vpd_mean",
+   "kind": "number",
+   "required": true,
+   "min": -0.2282,
+   "max": 5.6265
+  },
+  {
+   "name": "vpd_max",
+   "label": "vpd_max",
+   "kind": "number",
+   "required": true,
+   "min": -0.3555,
+   "max": 9.8855
+  },
+  {
+   "name": "soil_moisture_mean",
+   "label": "soil_moisture_mean",
+   "kind": "number",
+   "required": true,
+   "min": -0.02,
+   "max": 0.5097
+  },
+  {
+   "name": "pressure_range",
+   "label": "pressure_range",
+   "kind": "number",
+   "required": true,
+   "min": 0.74,
+   "max": 19.66
+  },
+  {
+   "name": "doy_sin",
+   "label": "doy_sin",
+   "kind": "number",
+   "required": true,
+   "min": -1.1,
+   "max": 1.1
+  },
+  {
+   "name": "doy_cos",
+   "label": "doy_cos",
+   "kind": "number",
+   "required": true,
+   "min": -1.1,
+   "max": 1.1
+  },
+  {
+   "name": "month",
+   "label": "month",
+   "kind": "number",
+   "required": true,
+   "min": 0.45,
+   "max": 12.55
+  },
+  {
+   "name": "is_monsoon",
+   "label": "is_monsoon",
+   "kind": "number",
+   "required": true,
+   "min": -0.05,
+   "max": 1.05
+  },
+  {
+   "name": "temp_range",
+   "label": "temp_range",
+   "kind": "number",
+   "required": true,
+   "min": 0.215,
+   "max": 21.885
+  },
+  {
+   "name": "dewpoint_depression",
+   "label": "dewpoint_depression",
+   "kind": "number",
+   "required": true,
+   "min": -1.0283,
+   "max": 30.5783
+  },
+  {
+   "name": "precipitation_sum_lag1",
+   "label": "precipitation_sum_lag1",
+   "kind": "number",
+   "required": true,
+   "min": -11.225,
+   "max": 235.725
+  },
+  {
+   "name": "rh_mean_lag1",
+   "label": "rh_mean_lag1",
+   "kind": "number",
+   "required": true,
+   "min": 10.1458,
+   "max": 101.3542
+  },
+  {
+   "name": "pressure_msl_mean_lag1",
+   "label": "pressure_msl_mean_lag1",
+   "kind": "number",
+   "required": true,
+   "min": 989.3258,
+   "max": 1028.4492
+  },
+  {
+   "name": "dewpoint_mean_lag1",
+   "label": "dewpoint_mean_lag1",
+   "kind": "number",
+   "required": true,
+   "min": -10.3865,
+   "max": 30.199
+  },
+  {
+   "name": "cloud_mean_lag1",
+   "label": "cloud_mean_lag1",
+   "kind": "number",
+   "required": true,
+   "min": -5.0,
+   "max": 105.0
+  },
+  {
+   "name": "temperature_2m_mean_lag1",
+   "label": "temperature_2m_mean_lag1",
+   "kind": "number",
+   "required": true,
+   "min": 4.805,
+   "max": 39.895
+  },
+  {
+   "name": "precipitation_sum_lag2",
+   "label": "precipitation_sum_lag2",
+   "kind": "number",
+   "required": true,
+   "min": -11.225,
+   "max": 235.725
+  },
+  {
+   "name": "rh_mean_lag2",
+   "label": "rh_mean_lag2",
+   "kind": "number",
+   "required": true,
+   "min": 10.1458,
+   "max": 101.3542
+  },
+  {
+   "name": "pressure_msl_mean_lag2",
+   "label": "pressure_msl_mean_lag2",
+   "kind": "number",
+   "required": true,
+   "min": 989.3258,
+   "max": 1028.4492
+  },
+  {
+   "name": "dewpoint_mean_lag2",
+   "label": "dewpoint_mean_lag2",
+   "kind": "number",
+   "required": true,
+   "min": -10.3865,
+   "max": 30.199
+  },
+  {
+   "name": "cloud_mean_lag2",
+   "label": "cloud_mean_lag2",
+   "kind": "number",
+   "required": true,
+   "min": -5.0,
+   "max": 105.0
+  },
+  {
+   "name": "temperature_2m_mean_lag2",
+   "label": "temperature_2m_mean_lag2",
+   "kind": "number",
+   "required": true,
+   "min": 4.805,
+   "max": 39.895
+  },
+  {
+   "name": "precipitation_sum_lag3",
+   "label": "precipitation_sum_lag3",
+   "kind": "number",
+   "required": true,
+   "min": -11.225,
+   "max": 235.725
+  },
+  {
+   "name": "rh_mean_lag3",
+   "label": "rh_mean_lag3",
+   "kind": "number",
+   "required": true,
+   "min": 10.1458,
+   "max": 101.3542
+  },
+  {
+   "name": "pressure_msl_mean_lag3",
+   "label": "pressure_msl_mean_lag3",
+   "kind": "number",
+   "required": true,
+   "min": 989.3258,
+   "max": 1028.4492
+  },
+  {
+   "name": "dewpoint_mean_lag3",
+   "label": "dewpoint_mean_lag3",
+   "kind": "number",
+   "required": true,
+   "min": -10.3865,
+   "max": 30.199
+  },
+  {
+   "name": "cloud_mean_lag3",
+   "label": "cloud_mean_lag3",
+   "kind": "number",
+   "required": true,
+   "min": -5.0,
+   "max": 105.0
+  },
+  {
+   "name": "temperature_2m_mean_lag3",
+   "label": "temperature_2m_mean_lag3",
+   "kind": "number",
+   "required": true,
+   "min": 4.805,
+   "max": 39.895
+  },
+  {
+   "name": "precip_sum_3d",
+   "label": "precip_sum_3d",
+   "kind": "number",
+   "required": true,
+   "min": -17.14,
+   "max": 359.94
+  },
+  {
+   "name": "precip_sum_7d",
+   "label": "precip_sum_7d",
+   "kind": "number",
+   "required": true,
+   "min": -17.765,
+   "max": 373.065
+  },
+  {
+   "name": "precip_sum_14d",
+   "label": "precip_sum_14d",
+   "kind": "number",
+   "required": true,
+   "min": -18.11,
+   "max": 380.31
+  },
+  {
+   "name": "precip_sum_30d",
+   "label": "precip_sum_30d",
+   "kind": "number",
+   "required": true,
+   "min": -24.84,
+   "max": 521.64
+  },
+  {
+   "name": "rh_mean_3d",
+   "label": "rh_mean_3d",
+   "kind": "number",
+   "required": true,
+   "min": 16.9035,
+   "max": 96.6382
+  },
+  {
+   "name": "rh_mean_7d",
+   "label": "rh_mean_7d",
+   "kind": "number",
+   "required": true,
+   "min": 18.1417,
+   "max": 92.2869
+  },
+  {
+   "name": "pressure_change_1d",
+   "label": "pressure_change_1d",
+   "kind": "number",
+   "required": true,
+   "min": -11.7569,
+   "max": 15.8944
+  },
+  {
+   "name": "pressure_change_3d",
+   "label": "pressure_change_3d",
+   "kind": "number",
+   "required": true,
+   "min": -14.2698,
+   "max": 17.3323
+  },
+  {
+   "name": "days_since_rain",
+   "label": "days_since_rain",
+   "kind": "number",
+   "required": true,
+   "min": -15.85,
+   "max": 332.85
+  }
+ ],
+ "samples": [
+  {
+   "title": "Islamabad (rain followed)",
+   "values": {
+    "city": "Islamabad",
+    "temperature_2m_max": 20.4,
+    "temperature_2m_min": 13.7,
+    "temperature_2m_mean": 16.8,
+    "apparent_temperature_mean": 16.7,
+    "precipitation_sum": 10.5,
+    "rain_sum": 10.5,
+    "precipitation_hours": 10.0,
+    "shortwave_radiation_sum": 10.85,
+    "wind_speed_10m_max": 9.7,
+    "wind_gusts_10m_max": 27.4,
+    "wind_direction_10m_dominant": 8,
+    "et0_fao_evapotranspiration": 2.14,
+    "sunshine_duration": 18247.3,
+    "daylight_duration": 41862.21,
+    "rh_mean": 74.0833333333,
+    "rh_min": 56,
+    "rh_max": 90,
+    "dewpoint_mean": 12.05,
+    "pressure_msl_mean": 1014.225,
+    "pressure_msl_min": 1011.9,
+    "pressure_msl_max": 1017.3,
+    "surface_pressure_mean": 953.5083333333,
+    "cloud_mean": 98.4583333333,
+    "cloud_max": 100,
+    "cloud_low_mean": 8.2916666667,
+    "cloud_mid_mean": 83.125,
+    "cloud_high_mean": 97.2083333333,
+    "wind_speed_mean": 5.5166666667,
+    "winddir_sin_mean": 0.0827056254,
+    "winddir_cos_mean": 0.7537825647,
+    "vpd_mean": 0.5095833333,
+    "vpd_max": 0.97,
+    "soil_moisture_mean": 0.4074583333,
+    "pressure_range": 5.4,
+    "doy_sin": 0.8992961916,
+    "doy_cos": 0.4373400963,
+    "month": 3,
+    "is_monsoon": 0,
+    "temp_range": 6.7,
+    "dewpoint_depression": 4.75,
+    "precipitation_sum_lag1": 0.0,
+    "rh_mean_lag1": 70.7083333333,
+    "pressure_msl_mean_lag1": 1015.8916666667,
+    "dewpoint_mean_lag1": 11.2208333333,
+    "cloud_mean_lag1": 84.4583333333,
+    "temperature_2m_mean_lag1": 17.1,
+    "precipitation_sum_lag2": 0.0,
+    "rh_mean_lag2": 75.0416666667,
+    "pressure_msl_mean_lag2": 1019.8083333333,
+    "dewpoint_mean_lag2": 11.1541666667,
+    "cloud_mean_lag2": 4.3333333333,
+    "temperature_2m_mean_lag2": 15.9,
+    "precipitation_sum_lag3": 3.3,
+    "rh_mean_lag3": 76.8333333333,
+    "pressure_msl_mean_lag3": 1018.2833333333,
+    "dewpoint_mean_lag3": 11.2625,
+    "cloud_mean_lag3": 88.4583333333,
+    "temperature_2m_mean_lag3": 15.4,
+    "precip_sum_3d": 10.5,
+    "precip_sum_7d": 14.2,
+    "precip_sum_14d": 95.9,
+    "precip_sum_30d": 100.2,
+    "rh_mean_3d": 73.2777777778,
+    "rh_mean_7d": 70.6666666667,
+    "pressure_change_1d": -1.6666666667,
+    "pressure_change_3d": -4.0583333333,
+    "days_since_rain": 0.0
+   }
+  },
+  {
+   "title": "Karachi (dry followed)",
+   "values": {
+    "city": "Karachi",
+    "temperature_2m_max": 36.0,
+    "temperature_2m_min": 25.6,
+    "temperature_2m_mean": 30.0,
+    "apparent_temperature_mean": 33.3,
+    "precipitation_sum": 0.0,
+    "rain_sum": 0.0,
+    "precipitation_hours": 0.0,
+    "shortwave_radiation_sum": 27.22,
+    "wind_speed_10m_max": 29.8,
+    "wind_gusts_10m_max": 50.0,
+    "wind_direction_10m_dominant": 269,
+    "et0_fao_evapotranspiration": 7.11,
+    "sunshine_duration": 46136.89,
+    "daylight_duration": 46594.96,
+    "rh_mean": 71.7916666667,
+    "rh_min": 43,
+    "rh_max": 95,
+    "dewpoint_mean": 23.6541666667,
+    "pressure_msl_mean": 1008.3791666667,
+    "pressure_msl_min": 1006.6,
+    "pressure_msl_max": 1010.1,
+    "surface_pressure_mean": 1007.5791666667,
+    "cloud_mean": 33.1666666667,
+    "cloud_max": 100,
+    "cloud_low_mean": 1.4583333333,
+    "cloud_mid_mean": 0.0,
+    "cloud_high_mean": 33.0,
+    "wind_speed_mean": 20.3958333333,
+    "winddir_sin_mean": -0.9866121208,
+    "winddir_cos_mean": 0.0170762876,
+    "vpd_mean": 1.3783333333,
+    "vpd_max": 3.35,
+    "soil_moisture_mean": 0.0390416667,
+    "pressure_range": 3.5,
+    "doy_sin": 0.9248025743,
+    "doy_cos": -0.3804473663,
+    "month": 4,
+    "is_monsoon": 0,
+    "temp_range": 10.4,
+    "dewpoint_depression": 6.3458333333,
+    "precipitation_sum_lag1": 0.0,
+    "rh_mean_lag1": 77.7916666667,
+    "pressure_msl_mean_lag1": 1008.8875,
+    "dewpoint_mean_lag1": 24.5416666667,
+    "cloud_mean_lag1": 20.25,
+    "temperature_2m_mean_lag1": 29.2,
+    "precipitation_sum_lag2": 0.0,
+    "rh_mean_lag2": 75.125,
+    "pressure_msl_mean_lag2": 1008.2166666667,
+    "dewpoint_mean_lag2": 24.0375,
+    "cloud_mean_lag2": 25.5833333333,
+    "temperature_2m_mean_lag2": 29.4,
+    "precipitation_sum_lag3": 0.0,
+    "rh_mean_lag3": 72.5416666667,
+    "pressure_msl_mean_lag3": 1007.7791666667,
+    "dewpoint_mean_lag3": 23.5625,
+    "cloud_mean_lag3": 29.5416666667,
+    "temperature_2m_mean_lag3": 29.5,
+    "precip_sum_3d": 0.0,
+    "precip_sum_7d": 0.0,
+    "precip_sum_14d": 0.0,
+    "precip_sum_30d": 0.0,
+    "rh_mean_3d": 74.9027777778,
+    "rh_mean_7d": 75.4583333333,
+    "pressure_change_1d": -0.5083333333,
+    "pressure_change_3d": 0.6,
+    "days_since_rain": 107.0
+   }
+  }
+ ]
+}

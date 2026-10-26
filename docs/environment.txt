@@ -1,0 +1,5 @@
+# Paste the real output of these 4 commands here (Stage 2.7):
+# git --version
+# node --version
+# npm --version
+# py -3.12 --version
