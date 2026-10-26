@@ -1,5 +1,16 @@
-# Paste the real output of these 4 commands here (Stage 2.7):
-# git --version
-# node --version
-# npm --version
-# py -3.12 --version
+Microsoft Windows [Version 10.0.26200.9457]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\dell>py -3.12 --version
+Python 3.12.10
+
+C:\Users\dell>git --version
+git version 2.55.0.windows.5
+
+C:\Users\dell>node --version
+v24.22.1
+
+C:\Users\dell>npm --version
+11.19.1
+
+C:\Users\dell>

@@ -2,9 +2,8 @@
 ML model → Flask REST API → Angular form → GitHub Actions CI → GitHub Pages (static demo)
 
 **Author:** Hassan Raza — Week 6 DevOps Lab
-**GitHub repo:** https://github.com/YOUR_USERNAME/YOUR_REPO
-**GitHub Pages (static UI only):** https://YOUR_USERNAME.github.io/YOUR_REPO/
-
+**GitHub repo:** https://github.com/231976-HassanRaza/rain-prediction-in-pakistan
+**GitHub Pages (static UI only):** https://231976-hassanraza.github.io/rain-prediction-in-pakistan/
 ## 1. Problem / task
 Binary classification: will it rain **tomorrow** (>= 1 mm) in Islamabad or Karachi? Inputs are today's daily weather
 (ERA5 reanalysis via Open-Meteo), lag features and rolling sums. Target: `rain_next_day`.
